@@ -15,6 +15,11 @@ export default defineConfig({
   },
   build: {
     emptyOutDir: true,
+    outDir: 'dist',
+    sourcemap: false,
+    minify: 'terser',
+    // Reduce chunk size
+    chunkSizeWarningLimit: 1600,
   },
   define: {
     __VUE_OPTIONS_API__: false,

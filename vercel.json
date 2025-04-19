@@ -1,0 +1,15 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "env": {
+    "VITE_ADMIN_CLIENT_PASS": "@vite_admin_client_pass",
+    "VITE_PAYLOAD_SECRET": "@vite_payload_secret",
+    "VITE_API_URL": "@vite_api_url"
+  }
+}
