@@ -53,8 +53,9 @@ export const contests = Object.freeze<Record<Club, Record<ContestTypeSlug, Selec
     ],
   },
   aaveg: {
-    solo: [{ name: 'Rangmanch', slug: 'parichay' }],
-    team: [{ name: 'Ad Mockery', slug: 'ad-mockery-matchup' }],
+    solo: [],
+    team: [{ name: 'Rangmanch', slug: 'parichay' },
+    { name: 'Ad Mockery', slug: 'ad-mockery-matchup' }],
   },
   'fine-arts': {
     solo: [
